@@ -1,0 +1,9 @@
+data/*.sqlite
+data/*.sqlite-*
+outputs/*
+!outputs/.gitkeep
+*.asv
+*.m~
+slprj/
+codegen/
+

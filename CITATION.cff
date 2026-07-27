@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you reference this portfolio project, cite it as below. Reuse requires written permission."
+title: "SolarTiltOptimizer-MATLAB"
+type: software
+authors:
+  - family-names: "Eltahir"
+    given-names: "Mohammed"
+    affiliation: "Karabük University"
+    email: "2228132324@ogrenci.karabük.edu.tr"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+version: 1.0.0
+date-released: 2026-07-27
+license: proprietary
+

@@ -1,0 +1,22 @@
+{
+  "studyName": "Sudan four-location demonstration",
+  "dataSource": {
+    "type": "pvgis",
+    "product": "tmy",
+    "apiBaseUrl": "https://re.jrc.ec.europa.eu/api/v5_3",
+    "radiationDatabase": "API-selected",
+    "startYear": 2005,
+    "endYear": 2023,
+    "useHorizon": true,
+    "forceRefresh": false
+  },
+  "locations": [
+    {"name":"Wadi Halfa", "latitude":21.8000, "longitude":31.3500, "elevation":184},
+    {"name":"Dongola", "latitude":19.1690, "longitude":30.4740, "elevation":227},
+    {"name":"Khartoum", "latitude":15.5000, "longitude":32.5600, "elevation":385},
+    {"name":"Port Sudan", "latitude":19.6100, "longitude":37.2100, "elevation":5}
+  ],
+  "models": ["LiuJordan","Badescu","Klucher","Perez","HayDavies","HDKR","Koronakis","TempsCoulson"],
+  "optimization": {"surfaceAzimuthDeg":180, "albedo":0.2, "tiltGridDeg":[0,90,1], "sunThreshold":0.01, "epsilonIrradiance":0.001},
+  "output": {"directory":"outputs", "database":"data/solar_tilt.sqlite", "writeCsv":true, "writeFigures":true}
+}

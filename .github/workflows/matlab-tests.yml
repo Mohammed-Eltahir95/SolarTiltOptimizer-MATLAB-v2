@@ -1,0 +1,14 @@
+name: MATLAB tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2023b
+      - uses: matlab-actions/run-command@v2
+        with:
+          command: addpath('src'); results=runtests('tests','IncludeSubfolders',true); assertSuccess(results)
+

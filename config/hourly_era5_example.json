@@ -1,0 +1,9 @@
+{
+  "studyName": "Wadi Halfa ERA5 historical example",
+  "dataSource": {"type":"pvgis","product":"hourly","apiBaseUrl":"https://re.jrc.ec.europa.eu/api/v5_3","radiationDatabase":"PVGIS-ERA5","startYear":2005,"endYear":2023,"useHorizon":true,"forceRefresh":false},
+  "locations": [{"name":"Wadi Halfa","latitude":21.8,"longitude":31.35,"elevation":184}],
+  "models": ["LiuJordan","Badescu","Klucher","Perez","HayDavies","HDKR","Koronakis","TempsCoulson"],
+  "optimization": {"surfaceAzimuthDeg":180,"albedo":0.2,"tiltGridDeg":[0,90,1],"sunThreshold":0.01,"epsilonIrradiance":0.001},
+  "output": {"directory":"outputs","database":"data/solar_tilt.sqlite","writeCsv":true,"writeFigures":true}
+}
+

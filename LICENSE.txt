@@ -1,0 +1,6 @@
+Copyright (c) 2026 Mohammed Eltahir. All rights reserved.
+
+This repository is made publicly visible solely for inspection, academic evaluation, and portfolio review. No license or permission is granted to copy, modify, redistribute, publish, sublicense, sell, incorporate, execute for commercial or research use, or create derivative works from any part of this software or documentation.
+
+Access to or viewing of the repository does not constitute permission to reuse its contents. Any use beyond inspection requires prior written permission from the copyright holder. Third-party data and services remain subject to their own terms.
+
