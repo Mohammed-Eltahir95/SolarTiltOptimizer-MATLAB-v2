@@ -15,11 +15,15 @@ Set `dataSource.type` to `pvgis`, `csv`, or `excel`. File imports follow [the ca
 - SQLite request provenance, normalized weather, configurations, and results
 - Cross-location model rankings, gain metrics, and a dependency-free location map
 
-The numerical equations, cleaning rules, 1° grid search, Perez benchmark, and seasons are preserved from the original script. See [the scientific review](SCIENTIFIC_REVIEW.md) for limitations intentionally not changed.
+The cleaning rules, 1° grid search, Perez benchmark, and seasons are preserved from the original script. The Perez coefficient calculation and PVGIS TMY time alignment include documented correctness fixes; see [the scientific review](SCIENTIFIC_REVIEW.md).
 
 The PVGIS API chooses the radiation source for its TMY endpoint; the historical
 configuration explicitly requests PVGIS-ERA5 for 2005–2023. Keep the two
 products distinct when interpreting or citing results.
+
+PVGIS TMY source-year timestamps are normalized to a continuous representative
+year, and the API-provided irradiance time offset is applied before solar-position
+calculations. This keeps hourly integration and irradiance geometry aligned.
 
 Run tests:
 
