@@ -12,7 +12,7 @@ Set `dataSource.type` to `pvgis`, `csv`, or `excel`. File imports follow [the ca
 
 - Tidy annual, monthly, seasonal, gain, ranking, and Perez-relative statistics tables
 - English PNG figures
-- SQLite request provenance, normalized weather, configurations, and results
+- SQLite request provenance, normalized weather, configurations, and results when MATLAB's `sqlite` interface is available
 - Cross-location model rankings, gain metrics, and a dependency-free location map
 
 The cleaning rules, 1° grid search, Perez benchmark, and seasons are preserved from the original script. The Perez coefficient calculation and PVGIS TMY time alignment include documented correctness fixes; see [the scientific review](SCIENTIFIC_REVIEW.md).

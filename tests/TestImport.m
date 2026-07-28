@@ -8,6 +8,15 @@ classdef TestImport < matlab.unittest.TestCase
       t.verifyEqual(w.timestamp(1),datetime(2001,1,1,0,30,0,'TimeZone','UTC'));
       t.verifyEqual(w.timestamp(2),datetime(2001,2,1,0,30,0,'TimeZone','UTC'));
   end
+  function databaseOperationsAllowDisabledBackend(t)
+      t.verifyEmpty(solartilt.db.readWeather([],"unused"));
+      id=solartilt.db.beginRun([],struct());
+      t.verifyNotEmpty(id);
+      solartilt.db.storeWeather([],table(),struct());
+      solartilt.db.storeResults([],id,table());
+      solartilt.db.finishRun([],id,"completed");
+      solartilt.db.closeConnection([]);
+  end
  end
 end
 
