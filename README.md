@@ -36,7 +36,6 @@ addpath('src'); results = runtests('tests','IncludeSubfolders',true); assertSucc
 Mohammed Eltahir — Karabük University  
 2228132324@ogrenci.karabük.edu.tr
 
-Replace the placeholder ORCID in `CITATION.cff` before publication.
 
 ## Terms
 
