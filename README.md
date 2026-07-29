@@ -34,7 +34,8 @@ addpath('src'); results = runtests('tests','IncludeSubfolders',true); assertSucc
 ## Author
 
 Mohammed Eltahir — Karabük University  
-2228132324@ogrenci.karabük.edu.tr
+2228132324@ogrenci.karabUk.edu.tr 
+
 
 
 ## Terms
